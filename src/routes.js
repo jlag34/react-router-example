@@ -6,6 +6,6 @@ import PostsIndex from './components/posts_index';
 
 export default (
   <Route path='/' component={App}>
-    <IndexRoute component={PostsIndex} /> 
+    <IndexRoute component={PostsIndex} />
   </Route>
 );
