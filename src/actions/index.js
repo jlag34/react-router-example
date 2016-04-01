@@ -3,12 +3,13 @@ import axios from 'axios';
 export const FETCH_POSTS = 'FETCH_POSTS';
 
 const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
+//You do not have to register for an API key. Just Make one up '?key=anything'
 const API_KEY = '?key=wefaoeijfaoijfaefasd';
 
 export function fetchPosts() {
-    const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
-    return {
-        type: FETCH_POSTS,
-        payload: request
-    };
+  const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
+  return {
+    type: FETCH_POSTS,
+    payload: request
+  };
 }
